@@ -19,6 +19,8 @@ export class AuthService {
     //   params:new HttpParams().set('q',cityName).set('units','metric').set('mode' , 'jdon')
     // })
 
+    console.log(`https://api.openweathermap.org/data/2.5/weather?q='${cityName}&appid=c0012b4b1ebc564be23e4b3fffb25942&units=${unites}`)
+
     return this.http.get('https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid=c0012b4b1ebc564be23e4b3fffb25942&units='+unites)
 
   }
